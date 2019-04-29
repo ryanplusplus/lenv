@@ -8,7 +8,7 @@ Lua Version Manager.
 ## Installation
 
 ```sh
-$ curl -L http://git.io/lenv | perl
+$ curl -L https://raw.githubusercontent.com/ryanplusplus/lenv/master/lenv | perl
 $ source ~/.lenvrc
 ```
 
@@ -50,7 +50,7 @@ Usage:
     lenv ls                             List installed versions
     lenv install <version> <opt...>     Download and install a <version> of lua
                                         with luarocks
-    lenv install-lj <version> <opt...>  Download and install a <version> of 
+    lenv install-lj <version> <opt...>  Download and install a <version> of
                                         luajit with luarocks
     lenv uninstall <version>            Uninstall a <version> of lua
     lenv uninstall-lj <version>         Uninstall a <version> of luajit
@@ -87,4 +87,3 @@ $ lenv use-lj 2.0.4
 $ lua -v
 LuaJIT 2.0.4 -- Copyright (C) 2005-2015 Mike Pall. http://luajit.org/
 ```
-

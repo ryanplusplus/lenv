@@ -490,8 +490,10 @@ sub parseRocksVers
     {
         # version 2.2 or later
         if( $3 >= 2.2 ){
-            print "$2\t$1\n";
-            push @arr, "$2 http://luarocks.github.io/luarocks/releases/$1 $1";
+            if( $3 < 3.1 ){
+                print "$2\t$1\n";
+                push @arr, "$2 http://luarocks.github.io/luarocks/releases/$1 $1";
+            }
         }
     }
     @arr = reverse( sort @arr );
