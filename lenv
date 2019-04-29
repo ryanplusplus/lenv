@@ -561,7 +561,7 @@ sub cmdUpdate
     }
 
     # fetch lenv
-    shcall( "$CURL -L --compressed 'http://git.io/lenv' > ${LENV}" );
+    shcall( "$CURL -L --compressed 'https://raw.githubusercontent.com/ryanplusplus/lenv/master/lenv' > ${LENV}" );
     shcall( "chmod +x ${LENV}" );
 
     # replace $ENVBIN string to shebang
