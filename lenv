@@ -29,7 +29,7 @@ use warnings;
 binmode STDOUT, ":encoding(UTF-8)";
 use open ":encoding(utf8)";
 
-my $VERSION = '0.1.0';
+my $VERSION = '0.1.1';
 
 #
 # directories
